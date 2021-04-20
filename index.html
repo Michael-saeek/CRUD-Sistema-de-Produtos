@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First System CRUD</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+<header class="container-header">
+    <div class="header">
+        <h2>Sistema Estoque de produtos</h2>
+    </div>
+
+    <nav>
+        <ol>
+            <li></li>
+        </ol>
+    </nav>
+</header>
+    
+<section class="container">
+    <form id="form" class="formulario">
+        <div class="container-formulario">
+            <h1 class="title-form">Adicione seus produtos</h1>
+            <input type="text" id="id" class="input" placeholder="ID">
+            <input type="text" id="nomeProduto" class="input" placeholder="Produto">
+            <input type="number" id="preco" class="input" placeholder="Preço">
+            <input type="number" id="ano" class="input" placeholder="Ano">
+            <input type="submit" class="submit" value="Enviar na lista">
+        </div>
+    </form>
+
+    <div class="columnCRUD">
+        <table class="tableProdutos">
+            <thead>
+                <th>Id</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Ano</th>
+                <th></th>
+            </thead>
+
+            <tbody class="produto">
+                <!--
+                    <tr>
+                    <td>Telefono</td>
+                    <td>1500</td>
+                    <td>2021</td>
+                    <td><button class="buttonDelete">Delete</button></td>
+                    </tr>
+                -->
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
